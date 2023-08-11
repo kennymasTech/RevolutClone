@@ -1,0 +1,403 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@100;200;300;400;500;600;700;800&family=Syne:wght@400;500;600;700&family=Roboto:wght@300;400;500;700;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    color: inherit;
+    list-style-type: none;
+    /* outline: none; */
+}
+
+html {
+    font-size: 65.2%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Sofia Sans', sans-serif;
+    background-color: #F2FEFF;
+}
+
+.sticky .header {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 100%;
+    box-shadow: 50px;
+    box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.30);
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.header {
+    background-color: #E8EDED;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 9.6rem;
+    padding: 0 4.8rem;
+}
+
+.headerText {
+    color: #1C1C1C;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.mainNavList {
+    color: #1C1C1C;
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    gap: 3.2rem;
+    /* font-size: 20px; */
+}
+
+.mainNavLink:link, .mainNavLink:visited {
+    text-decoration: none;
+    font-size: 24px;
+    color: #1c1c1c;
+}
+
+.mainNavLink:hover, .mainNavLink:active {
+    color: #6fcade;
+    text-decoration: underline;   
+}
+
+.navBtn {
+    display: flex;
+    font-family: "Syne", sans-serif;
+    gap: 1rem;
+    font-size: 24px;
+    font-weight: 600px;
+}
+
+.btn, .btn:link, .btn:visited {
+    width: 150px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+    text-decoration: none;
+    border: none;
+}
+
+.LoginBtn:link, .LoginBtn:visited {
+    background-color: #9FB7B9;
+    color: #F6F6F6;
+}
+
+.LoginBtn:hover, .LoginBtn:active {
+    background-color: #b7ced1;
+    color: black;
+}
+
+.SignUpBtn:link, .SignUpBtn:visited {
+    background-color: inherit;
+    border: 1px solid #1c1c1c;
+    color: #333;
+}
+
+.SignUpBtn:hover, .SignUpBtn:active {
+    background-color: #f5f2ec;
+    border: 1px solid white;
+    color: #1C1C1C;
+}
+
+.heroSection {
+    background-image: url(/img/GroupCards.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15rem;
+    text-align: center;   
+}
+
+.heroContainer {
+    height: 519px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heroText, .heroSubTittle {
+    margin-bottom: 2rem;
+    font-size: 32px;
+    font-family: 'Sofia Sans', sans-serif;
+    font-weight: 500;
+    color: #1C1C1C;
+} 
+
+.heroTittle {
+    margin-bottom: 2rem;
+    font-size: 115px;
+}
+
+.heroBtn {
+    font-family: "syne", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    
+}
+
+.heroBtn .btn {
+    color: #F6F6F6;
+    text-decoration: none;
+    border-radius: 10px;
+    background: #9FB7B9;
+    color: #F6F6F6;
+    font-size: 15px;
+    width: 346px;
+    height: 65px;
+    padding: 10px;
+}
+
+/* ABOUT SECTION */
+
+.aboutSection {
+    padding: 0 4.8rem;
+    margin-bottom: 141px;
+}
+
+.aboutSection .gridCard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 178px;
+    margin-top: 10rem;
+    /* height: 138px; */
+    background-color: #6fcade;
+    border-radius: 20px;
+    
+    
+}
+
+.aboutSection .addWallet {
+    padding: 135px 61px 62px 80px;
+}
+
+.aboutSection .gridItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutSection .gridItem button {
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: #1C1C1C;
+    color: #F6F6F6;
+    font-size: 24px;
+    font-weight: 600;
+    width: 411px;
+    height: 65px;
+    margin-top: 29px;
+    border-radius: 10px;
+}
+
+.aboutSection .gridItemText {
+    align-items: flex-start;
+    color: #1C1C1C;
+}
+
+.aboutSection .gridItemText h3 {
+    font-family: "Syne", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    width: 468px;
+    margin-bottom: 25px;
+    line-height: 38px;
+
+} 
+
+.aboutSection .gridItemText p {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 33px;
+    width: 574px;
+    margin-bottom: 152px;
+}
+
+.aboutSection .learnMore {
+    padding-top: 22px 61px 41px 83px;
+}
+
+.aboutSection .learnMore .gridItemText {
+    margin-top: 135px;
+}
+
+.aboutSection .gridItemText .learnMoreBtn {
+    width: 236px;
+    margin-left: 151px;
+}
+
+/* FOOTER SECTION */
+
+.footerSection {
+    background-color: #1C1C1C;
+    background-image: url(./img/Footer.svg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffff;
+    font-size: 32px;
+    font-weight: 400;
+    font-family: "syne", sans-serif;
+    border: 1px solid black;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 89px;
+    padding: 152px 831px 164px 100px;
+
+}
+
+.footerSection .gridItem {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footerSection h4 {
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 55px;
+}
+
+.footerSection .footerLinks {
+    width: 134px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 27px;
+    font-size: 22px;
+    font-weight: 300;
+    font-family: "Inter", sans-serif;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* .aboutSection {
+    padding: 9rem 0 3,6rem;
+}
+
+.aboutCon {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardOne, .cardTwo {
+    display: flex;
+    background-color: #6fcade;
+    width: 75%;
+    height: 70vh;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.atm {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    row-gap: 0;
+    margin-top: 20px;
+}
+
+.applePy {
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    justify-content: center;
+    background-color: #1c1c1c;
+    color: #F6F6F6;
+    padding: 5px 0;
+    width: 300px;
+    font-size: 18px;
+    border-radius: 10px;
+    column-gap: 10px;
+    margin: auto;
+}
+
+.text {
+    justify-content: center;
+    align-items: center;
+    margin-left: 80px;
+    margin-top: 50px;
+}
+
+.atm2 {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    row-gap: o;
+    margin-top: 20px;
+}
+
+.text2 {
+    justify-content: center;
+    align-items: center;
+    margin-left: 80px;
+    margin-top: 50px;
+}
+
+.btnDiv {
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.learnBtn:link, .learnBtn:visited {
+    background-color: #1C1C1C;
+    color: #F6F6F6;
+    font-size: 18px;
+}
+
+.learnBtn:hover, .learnBtn:active {
+    background-color: white;
+    color: #1C1C1C;
+}
+
+footer {
+    background-color: #023e8a;
+    color: white;
+} */
+
+
+
+
+
+
+
+
+
+
+
