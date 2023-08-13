@@ -60,7 +60,6 @@ body {
     text-decoration: none;
     list-style-type: none;
     gap: 3.2rem;
-    /* font-size: 20px; */
 }
 
 .mainNavLink:link, .mainNavLink:visited {
