@@ -181,11 +181,8 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 178px;
     margin-top: 10rem;
-    /* height: 138px; */
     background-color: #6fcade;
     border-radius: 20px;
-    
-    
 }
 
 .aboutSection .addWallet {
