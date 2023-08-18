@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FIGMA PROJECT</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/mediaQuery.css">
+    <link rel="stylesheet" href="/general.css">
 </head>
-<body class="sticky">
+<body>
 
     <!-- HEADER -->
 
     <header class="header">
-        <a href="#" class="headerText">
+        <a href="#" class="logo">
             <h2>Revolut</h2>
             <img src="/img/Ellipse.png" alt="Ellipse1 picture">
             <img src="/img/Polygon.png" alt="Polygon1 picture">
@@ -20,16 +22,31 @@
         
         <nav class="mainNav">
             <ul class="mainNavList">
-                <li><a href="#" class="mainNavLink">Personal</a></li>
+                <li class="mainNavigationLink"><a href="#" class="mainNavLink" id="Personal">Personal</a>
+                <ul class="personalList">
+                    <li><a href="#" class="personalLink">Card</a></li>
+                    <li><a href="#" class="personalLink">Food</a></li>
+                    <li><a href="#" class="personalLink">Transfer</a></li>
+                    <li><a href="#" class="personalLink">Atm</a></li>
+                    <li><a href="#" class="personalLink">Money</a></li>
+                </ul>
+            </li>
                 <li><a href="#" class="mainNavLink">Business</a></li>
                 <li><a href="#" class="mainNavLink">Revoult&lt;18</a></li>
                 <li><a href="#" class="mainNavLink">Company</a></li>
             </ul>
         </nav>
 
-        <div class="navBtn">
-            <a href="#" class="btn LoginBtn">Log in</a>
-            <a href="#" class="btn SignUpBtn">Sign up</a>
+        <div class="mobileDiv">
+            <div class="navBtn">
+                <a href="#" class="btn LoginBtn">Log in</a>
+                <a href="/reg.html" class="btn SignUpBtn">Sign up</a>
+            </div>
+    
+            <div class="btn-mobile-nav">
+                <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+                <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+            </div>
         </div>
     </header>
 
@@ -56,7 +73,7 @@
         <section class="aboutSection">
             <div class="gridCard addWallet">
                 <div class="gridItem">
-                    <img src="/img/Card1.png" alt="atm card"><br>
+                    <img class="aboutImg1" src="/img/Card1.png" alt="atm card"><br>
                     
                     <a href="#"><button>
                         <img src="/img/Wallet.png" alt="wallet icon">Add to apple wallet
@@ -73,7 +90,7 @@
             
             <div class="gridCard learnMore">
                 <div class="gridItem">
-                    <img src="/img/cards.svg" alt="atm card"><br>
+                    <img class="aboutImg2" src="/img/cards.svg" alt="atm card"><br>
                     
                 </div>
                 <div class="gridItem gridItemText">
@@ -86,43 +103,7 @@
             </div>
             
         </section>
-
-
-
-
-        <!-- <section class="aboutSection">
-            <div class="aboutCon">
-                <div class="cardOne">
-                    <div class="atm">
-                        <img src="/img/Card1.jpg" alt="atm card" style="border-radius: 10px; width: 350px; height: 230px; margin-left: 50px; margin-top: 20px;">
-                        <div class="applePy">
-                           <img src="/img/Wallet.png" alt="wallet">
-                           <p style="font-size: 20px;">Add to apple wallet</p>
-                        </div>
-                    </div>
-                    
-                    <div class="text">
-                        <h3 style="font-size: 35px;">Spend right away with <br> Apple pay or Google pay</h3>
-                        <p style="font-size: 20px; margin-top: 20px;">Connect your card to tap and pay with your <br> phone. No need to wait for your physical card to <br> arrive</p>
-                    </div>
-                   </div>
-                    <div class="cardTwo">
-                        <div class="atm2">
-                            <img src="/img/Card2.png" alt="atm card" style="border-radius: 10px; width: 400px; height: 400px; margin-left: 50px; margin-top: 20px;">
-                        </div>
-                        <div class="text2">
-                            <h3 style="font-size: 35px;">Spend right away with <br> Apple pay or Google pay</h3>
-                            <p style="font-size: 20px; margin-top: 20px;">Connect your card to tap and pay with your <br> phone. No need to wait for your physical card to <br> arrive</p>
-                            <div class="btnDiv">
-                                <a href="#" class="btn learnBtn">Learn more</a>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
+    
     </main>
 
     <!-- FOOTER SECTION -->
@@ -132,10 +113,10 @@
             <h4>Personal</h4>
            <div class="footerLinks">
             <a href="">Card</a>
-            <a href="">Lorem</a>
-            <a href="">ipsum</a>
-            <a href="">dolor</a>
-            <a href="">atque</a>
+            <a href="">Food</a>
+            <a href="">Transfer</a>
+            <a href="">Atm</a>
+            <a href="">Money</a>
            </div>
         </div>
         <div class="gridItem">
@@ -169,6 +150,8 @@
            </div>
         </div>
     </footer>
-
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="/script.js"></script>
 </body>
 </html>

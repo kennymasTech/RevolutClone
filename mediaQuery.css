@@ -1,0 +1,369 @@
+
+
+/* ******* MEDIA QUERRY FOR DESKTOPS ( 1280PX SCREEN ) ******* */
+
+
+@media (max-width: 1280px) {
+
+    /* HEADER AND NAVBAR */
+
+
+    .header {
+        padding: 34px 29px;
+        height: 101px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .mainNav {
+        display: none;
+    }
+
+    .navBtn {
+        font-size: 20px;
+        margin-right: 30px;
+    }
+
+      
+    .btn-mobile-nav {
+        display: block;
+        z-index: 9999;
+      }
+      
+      .icon-mobile-nav {
+        width: 4.8rem;
+        height: 4.8rem;
+        color: #000000;
+      }
+    
+      .nav-open .mainNav {
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        transform: translateX(0);
+      }
+    
+      .nav-open .icon-mobile-nav[name="close-outline"] {
+        display: block;
+      }
+    
+      .nav-open .icon-mobile-nav[name="menu-outline"] {
+        display: none;
+      }
+
+    /* HERO SECTION */
+
+    .heroSection {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        margin-top: 15rem;
+        background-image: url(/img/HeroTablet.svg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .heroText, 
+    .heroSubTittle {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 400;
+    } 
+
+    .heroTittle {
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    .heroBtn .btn {
+        font-size: 20px;
+        width: 237px;
+        height: 47px;
+    }
+
+    /* ABOUT SECTION */
+
+    .aboutSection .gridItem button {
+        width: 284px;
+        height: 47px;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    .aboutSection .gridItemText h3 {
+        font-size: 20px;
+        width: 278px;
+        font-weight: 700;
+    } 
+
+    .aboutSection .gridItemText p {
+        font-size: 16px;
+        width: 321px;
+        font-weight: 400;
+        margin-bottom: 84px;
+    }
+
+    .aboutSection .gridItemText .learnMoreBtn {
+        width: 145px;
+        height: 47px;
+    }
+
+    .aboutImg1 {
+        width: 100%;
+    }
+
+    .aboutImg2 {
+        width: 90%;
+        margin-top: 50px;
+    }
+
+    /* .aboutSection .gridItem button {
+        width: 200px;
+        font-size: 18px;
+        padding: 10px;
+        margin: 1rem;
+    } */
+
+}
+
+/* ******* MEDIA QUERRY FOR  ( 991PX SCREEN ) ******* */
+
+
+@media (max-width: 768px) {
+    .mainNav {
+        display: none;
+    }
+}
+
+
+/* ******* MEDIA QUERRY FOR  ( 768PX SCREEN ) ******* */
+
+
+@media (max-width: 768px) {
+
+    .navBtn .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .mainNav {
+      background-color: rgba(255, 255, 255, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.5s ease-in;
+      opacity: 0;
+      pointer-events: none;
+      visibility: hidden;
+      position: absolute;
+      backdrop-filter: blur;
+      top: 0;
+      left: 0;
+      width: 30%;
+      height: 100vh;
+      transform: translateX(100%);
+    }
+
+  
+    .mainNavList {
+      flex-direction: column;
+      /* gap: 3rem; */
+    }
+  
+    .mainNaveLink:link, .mainNaveLink:visited {
+      font-size: 3rem;
+    }
+  
+    .heroSection {
+      height: 100vh;
+      width: 100%;
+    }
+  
+    .heroTitle {
+      font-size: 30px;
+      font-weight: 500;
+    }
+  
+    .heroSubTitle,
+    .heroText {
+      font-size: 15px;
+    }
+    .heroBtn .btn {
+      width: 260px;
+      height: 65px;
+      padding: 10px;
+      gap: 10px;
+    }
+    .aboutImg {
+      width: 60%;
+      margin-right: 10rem;
+    }
+  
+    .aboutSection > .gridCard {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 2px;
+    }
+    .aboutSection .gridItemText h3 {
+      font-size: 15px;
+      width: 268px;
+    }
+  
+    .aboutSection .gridItemText p {
+      font-size: 15px;
+      width: 280px;
+      margin-bottom: 80px;
+    }
+  
+    .aboutSection .gridItem button {
+      width: 224px;
+      height: 40px;
+      padding: 10px;
+      font-size: 15px;
+      gap: 10px;
+      margin-right: 60px;
+    }
+  
+    .twoCard {
+      width: 100%;
+      height: 50vh;
+    }
+    .aboutSection .gridItemText .learnBtn {
+      width: 145px;
+      height: 47px;
+      margin-left: 8rem;
+    }
+  
+    .footerFrame {
+      background-color: #1c1c1c;
+      border: 1px solid black;
+      color: #f6f6f6;
+      font-size: 25px;
+      width: 100vw;
+      margin-top: 100px;
+      font-weight: 400;
+      /* height: 100vh; */
+      background-position: left;
+      background-repeat: no-repeat;
+      display: grid;
+      grid-row-gap: 50px;
+      grid-template-columns: repeat(4, 1fr);
+      grid-column-gap: 20px;
+      padding: 50px 831px 50px 100px;
+    }
+  
+    .footerFrame .gridItem {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .footerFrame h4 {
+      font-family: "Roboto", sans-serif;
+      margin-bottom: 30px;
+    }
+  
+    .footerFrame .footerLink {
+      width: 134px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 17px;
+      font-size: 18px;
+      font-weight: 300;
+      font-family: "inter", sans-serif;
+    }
+
+  
+    /* ***** MEDIA QUERRY FOR MOBILE SCREEN OF 480PX ( 480PX SCREEN ) ***** */
+
+
+    @media (max-width: 430px) {
+
+        .navBtn {
+          display: none;
+        }
+      
+        .headerText h2 {
+          font-size: 18px;
+        }
+      
+        .headerText img {
+          width: 20px;
+          height: 20px;
+        }
+      
+        .icon-mobile-nav {
+          width: 24px;
+        }
+        
+        .heroSection {
+          height: 50vh;
+          width: 100vw;
+          margin-top: 10rem;
+        }
+      
+        .heroText, .heroSubTitle {
+          font-size: 15px;
+          font-weight: 400;
+          font-family: "sofia sans", sans-serif;
+        }
+      
+        .heroTitle {
+          font-size: 20px;
+          font-weight: 600;
+          font-family: "syne", sans-serif;
+        }
+      
+        .aboutImg {
+          width: 266px;
+          height: 169px;
+          margin-right: 1px;
+          margin-top: 1px;
+        }
+      
+        .aboutSection .gridItem button {
+          width: 266px;
+          height: 47px;
+          margin-right: 0px;
+          margin-top: 5px;
+          margin-bottom: 5rem;
+        }
+      
+        .aboutSection > .gridCard {
+          display: flex;
+          flex-direction: column-reverse;
+          justify-content: center;
+          align-items: center;
+          background-color: #fff;
+          border-radius: 20px;
+          margin-top: 30px;
+          padding-top: 22px;
+          padding-bottom: 10px;
+        }
+      
+        .footerFrame {
+          display: grid;
+          grid-row-gap: 50px;
+          grid-template-columns: repeat(2, 1fr);
+          grid-column-gap: 20px;
+          padding: 100px 831px 50px 40px;
+          margin-top: 40px;
+        }
+      
+        .footerFrame .footerLink {
+          display: flex;
+          flex-direction: column;
+          row-gap: 17px;
+          font-size: 16px;
+          font-weight: 300;
+          font-family: "inter", sans-serif;
+        }
+      
+      }
+}
+

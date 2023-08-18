@@ -1,50 +1,23 @@
 
-@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@100;200;300;400;500;600;700;800&family=Syne:wght@400;500;600;700&family=Roboto:wght@300;400;500;700;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap");
-
-
-* {
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    border: none;
-    color: inherit;
-    list-style-type: none;
-}
-
-html {
-    font-size: 65.2%;
-    overflow-x: hidden;
-}
-
-body {
-    font-family: 'Sofia Sans', sans-serif;
-    background-color: #F2FEFF;
-}
-
-.sticky .header {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-    width: 100%;
-    box-shadow: 50px;
-    box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.30);
-    background-color: rgba(255, 255, 255, 0.95);
-}
+/* HEADER AND NAVBAR */
 
 .header {
-    background-color: #E8EDED;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 9.6rem;
-    padding: 0 4.8rem;
+    background-color: #E8EDED;
+    width: 100%;
+    height: 138px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    padding: 42px 100px;
+    z-index: 1;
+    box-shadow: 0px 1.2rem 3.2rem rgba(0, 0, 0, 0.3);  
 }
 
-.headerText {
+.logo {
     color: #1C1C1C;
     text-decoration: none;
     font-size: 20px;
@@ -55,22 +28,64 @@ body {
 }
 
 .mainNavList {
-    color: #1C1C1C;
+    
     display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     list-style-type: none;
+    color: #1C1C1C;
     gap: 3.2rem;
+    font-size: 24px;
+    
 }
 
 .mainNavLink:link, .mainNavLink:visited {
-    text-decoration: none;
-    font-size: 24px;
     color: #1c1c1c;
+    text-decoration: none;
 }
 
 .mainNavLink:hover, .mainNavLink:active {
+    color: #6fcade; 
+    text-decoration: underline;  
+}
+
+.mobileDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.personalList {
+    list-style: none;
+    font-size: 14px;
+    margin-top: 20rem;
+    padding: 70px 30px;
+    display: none;
+    background-color: #e8eded;
+    gap: 2rem;
+    display: none;
+}
+
+.personalLink:link .personalLink {
+    display: none;
+}
+
+.personalLink:link, .personalLink:visited {
+    color: #1C1C1C;
+    font-size: 24px;
+}
+
+.personalLink:hover, .personalLink:active {
     color: #6fcade;
-    text-decoration: underline;   
+}
+
+.mainNavigationLink:hover .personalList {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20rem;
+    padding: 2px 50px;
+    border-radius: 10px;
 }
 
 .navBtn {
@@ -81,12 +96,15 @@ body {
     font-weight: 600px;
 }
 
-.btn, .btn:link, .btn:visited {
-    width: 150px;
-    height: 65px;
+.btn, 
+.btn:link, 
+.btn:visited {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 150px;
+    height: 65px;
+    padding: 5px 15px;
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.5s;
@@ -116,60 +134,91 @@ body {
     color: #1C1C1C;
 }
 
+
+/* MOBILE NAV BUTTON */
+
+
+.btn-mobile-nav {
+    cursor: pointer;
+    border: none;
+    display: none;
+}
+
+.icon-mobile-nav {
+    width: 4.8rem;
+    height: 4.8rem;
+    color: #000;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+    display: none;
+}
+
+
+/* HERO SECTION */
+
+
 .heroSection {
+    display: flex;
+    justify-content: center;
     background-image: url(/img/GroupCards.png);
     background-position: center;
     background-size: cover;
     height: 100vh;
     width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 15rem;
-    text-align: center;   
+    margin-top: 15rem;     
 }
 
 .heroContainer {
-    height: 519px;
-    width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    padding-top: 3rem;
+    text-align: center;
+   
 }
 
-.heroText, .heroSubTittle {
-    margin-bottom: 2rem;
+.heroText, 
+.heroSubTittle {
+    margin-bottom: 34px;
     font-size: 32px;
-    font-family: 'Sofia Sans', sans-serif;
     font-weight: 500;
     color: #1C1C1C;
-} 
+}
 
 .heroTittle {
-    margin-bottom: 2rem;
+    font-family: "syne", sans-serif;
     font-size: 115px;
+    font-weight: 600;
+    margin-bottom: 34px;
 }
 
 .heroBtn {
     font-family: "syne", sans-serif;
     font-size: 24px;
     font-weight: 600;
-    
 }
 
 .heroBtn .btn {
+    font-size: 24px;
     color: #F6F6F6;
-    text-decoration: none;
-    border-radius: 10px;
     background: #9FB7B9;
-    color: #F6F6F6;
-    font-size: 15px;
     width: 346px;
     height: 65px;
     padding: 10px;
+    border-radius: 10px;   
 }
 
+.heroBtn .btn:hover, 
+.heroBtn .btn:active {
+    color: #1C1C1C;
+    background: #b7ced1;
+}
+
+
 /* ABOUT SECTION */
+
 
 .aboutSection {
     padding: 0 4.8rem;
@@ -180,9 +229,10 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 178px;
-    margin-top: 10rem;
     background-color: #6fcade;
     border-radius: 20px;
+    padding: 135px 61px 62px 80px;
+    margin-top: 10rem;
 }
 
 .aboutSection .addWallet {
@@ -195,12 +245,17 @@ body {
     align-items: center;
 }
 
+.aboutSection .gridItemText {
+    align-items: flex-start;
+    color: #1C1C1C;
+}
+
 .aboutSection .gridItem button {
-    cursor: pointer;
     display: flex;
-    gap: 10px;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    gap: 10px;
     background-color: #1C1C1C;
     color: #F6F6F6;
     font-size: 24px;
@@ -211,19 +266,13 @@ body {
     border-radius: 10px;
 }
 
-.aboutSection .gridItemText {
-    align-items: flex-start;
-    color: #1C1C1C;
-}
-
 .aboutSection .gridItemText h3 {
     font-family: "Syne", sans-serif;
     font-size: 32px;
     font-weight: 700;
     width: 468px;
-    margin-bottom: 25px;
     line-height: 38px;
-
+    margin-bottom: 25px;
 } 
 
 .aboutSection .gridItemText p {
@@ -234,8 +283,11 @@ body {
     margin-bottom: 152px;
 }
 
+/* LEARN MORE CARD */
+
+
 .aboutSection .learnMore {
-    padding-top: 22px 61px 41px 83px;
+    padding: 21px 61px 41px 83px;
 }
 
 .aboutSection .learnMore .gridItemText {
@@ -244,28 +296,25 @@ body {
 
 .aboutSection .gridItemText .learnMoreBtn {
     width: 236px;
-    margin-left: 151px;
 }
 
 /* FOOTER SECTION */
 
+
 .footerSection {
     background-color: #1C1C1C;
-    background-image: url(./img/Footer.svg);
+    background-image: url(/img/foot.svg);
     background-position: left;
     background-repeat: no-repeat;
-    background-size: cover;
-    color: #ffff;
-    font-size: 32px;
-    font-weight: 400;
-    font-family: "syne", sans-serif;
-    border: 1px solid black;
-
+    color: #F6F6F6;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 89px;
     padding: 152px 831px 164px 100px;
-
+    font-size: 32px;
+    font-weight: 400;
+    font-family: 'Syne', sans-serif;
+    height: 100vh;
 }
 
 .footerSection .gridItem {
@@ -287,106 +336,85 @@ body {
     font-size: 22px;
     font-weight: 300;
     font-family: "Inter", sans-serif;
-
 }
 
-
-
-
-/* .aboutSection {
-    padding: 9rem 0 3,6rem;
+#reg {
+    background-color: #b3e3e8;
 }
 
-.aboutCon {
+.formSect {
+    background: #b3e3e8;
+    width: 1728px;
+    height: 1219px;
+}
+
+.formCon {
     display: flex;
     flex-direction: column;
-    row-gap: 5rem;
     align-items: center;
-    justify-content: center;
 }
 
-.cardOne, .cardTwo {
-    display: flex;
-    background-color: #6fcade;
-    width: 75%;
-    height: 70vh;
-    border-radius: 20px;
-    padding: 20px;
-}
-
-.atm {
-    display: flex;
-    flex-direction: column;
-    place-items: center;
-    row-gap: 0;
-    margin-top: 20px;
-}
-
-.applePy {
-    display: flex;
-    flex-direction: row;
-    place-items: center;
-    justify-content: center;
-    background-color: #1c1c1c;
-    color: #F6F6F6;
-    padding: 5px 0;
-    width: 300px;
-    font-size: 18px;
-    border-radius: 10px;
-    column-gap: 10px;
-    margin: auto;
-}
-
-.text {
-    justify-content: center;
-    align-items: center;
-    margin-left: 80px;
-    margin-top: 50px;
-}
-
-.atm2 {
-    display: flex;
-    flex-direction: column;
-    place-items: center;
-    row-gap: o;
-    margin-top: 20px;
-}
-
-.text2 {
-    justify-content: center;
-    align-items: center;
-    margin-left: 80px;
-    margin-top: 50px;
-}
-
-.btnDiv {
-    margin-top: 100px;
-    margin-left: 50px;
-}
-
-.learnBtn:link, .learnBtn:visited {
-    background-color: #1C1C1C;
-    color: #F6F6F6;
-    font-size: 18px;
-}
-
-.learnBtn:hover, .learnBtn:active {
-    background-color: white;
+.formHeading {
     color: #1C1C1C;
+    font-family: syne;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
-footer {
-    background-color: #023e8a;
-    color: white;
-} */
+.formTag {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
 
+.formBig {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+form label {
+    display: block;
+    color: #1C1C1C;
+    font-family: Sofia Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
 
+input {
+    width: 276px;  
+    height: 73px; 
+    border-radius: 5px;
+    border: 1px solid #000;
+    opacity: 0.5;
+    padding: 10px;
+    font-size: 20px;
+     
+}
 
+.formBtn {
+    border-radius: 10px;
+    background: #0044C7;
+    color: #F2FEFF;
+    font-size: 20px;
+    font-family: syne;
+    display: flex;
+    width: 465px;
+    height: 65px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 9rem;
+    flex-shrink: 0;
+}
 
-
-
-
-
-
-
+.formBtn {
+    display: flex;
+    flex-direction: column;
+}
