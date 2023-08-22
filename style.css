@@ -27,6 +27,10 @@
     gap: 5px;
 }
 
+.mainNav .navBtn {
+    display: none;
+}
+
 .mainNavList {
     
     display: flex;
@@ -48,12 +52,6 @@
 .mainNavLink:hover, .mainNavLink:active {
     color: #6fcade; 
     text-decoration: underline;  
-}
-
-.mobileDiv {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .personalList {
@@ -86,6 +84,14 @@
     margin-top: 20rem;
     padding: 2px 50px;
     border-radius: 10px;
+}
+
+/* NAV BUTTON */
+
+.mobileDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navBtn {
@@ -219,13 +225,13 @@
 
 /* ABOUT SECTION */
 
-
 .aboutSection {
-    padding: 0 4.8rem;
-    margin-bottom: 141px;
+    padding: 0 171px;
+    margin-bottom: 167px 0 141px;
 }
 
 .aboutSection .gridCard {
+    width: 1385px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 178px;
@@ -235,14 +241,19 @@
     margin-top: 10rem;
 }
 
+/* ADD WALLET */
 .aboutSection .addWallet {
-    padding: 135px 61px 62px 80px;
+    padding: 135px 61px 62px 68px;
 }
 
 .aboutSection .gridItem {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.aboutSection .gridItem .atmTablet {
+    display: none;
 }
 
 .aboutSection .gridItemText {
@@ -287,6 +298,7 @@
 
 
 .aboutSection .learnMore {
+    grid-column-gap: 100px;
     padding: 21px 61px 41px 83px;
 }
 
