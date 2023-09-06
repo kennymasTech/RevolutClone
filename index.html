@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FIGMA PROJECT</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="/mediaQuery.css">
-    <link rel="stylesheet" href="/general.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/mediaQuery.css">
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="Icon" href="/img/Polygon.png">
+    <link rel="apple-touch-icon" href="/img/Polygon.png">
 </head>
 <body>
 
@@ -15,36 +17,37 @@
     <header class="header">
         <a href="#" class="logo">
             <h2>Revolut</h2>
-            <img src="/img/Ellipse.png" alt="Ellipse1 picture">
+            <img src="/img/Ellipse.png" alt="circle picture">
             <img src="/img/Polygon.png" alt="Polygon1 picture">
-            <img src="/img/Rectangle.png" alt="Rectangle19 picture">
+            <img src="/img/Rectangle.png" alt="rectangle picture">
         </a>
         
         <nav class="mainNav">
             <ul class="mainNavList">
-                <li class="mainNavigationLink"><a href="#" class="mainNavLink" id="Personal">Personal</a>
-                <ul class="personalList">
-                    <li><a href="#" class="personalLink">Card</a></li>
-                    <li><a href="#" class="personalLink">Food</a></li>
-                    <li><a href="#" class="personalLink">Transfer</a></li>
-                    <li><a href="#" class="personalLink">Atm</a></li>
-                    <li><a href="#" class="personalLink">Money</a></li>
-                </ul>
-            </li>
+                <li class="mainNavigationLink">
+                    <a href="#" class="mainNavLink">Personal</a>
+                    <ul class="personalList">
+                     <li><a href="#" class="personalLink">Card</a></li>
+                     <li><a href="#" class="personalLink">Atm</a></li>
+                     <li><a href="#" class="personalLink">Transfer</a></li>
+                     <li><a href="#" class="personalLink">FAQ</a></li>
+                     <li><a href="#" class="personalLink">Get Pin</a></li>
+                    </ul>
+                </li>
                 <li><a href="#" class="mainNavLink">Business</a></li>
                 <li><a href="#" class="mainNavLink">Revoult&lt;18</a></li>
                 <li><a href="#" class="mainNavLink">Company</a></li>
-                <div class="navBtn">
-                    <a href="#" class="btn LoginBtn">Log in</a>
-                    <a href="/reg.html" class="btn SignUpBtn">Sign up</a>
-                </div>
+                <ul class="navBtn">
+                    <a href="#" class="btn loginButton">Login</a>
+                    <a href="/form.html" class="btn signupButton">Sign up</a>
+                </ul>
             </ul>
         </nav>
 
         <div class="mobileDiv">
             <div class="navBtn">
-                <a href="#" class="btn LoginBtn">Log in</a>
-                <a href="/reg.html" class="btn SignUpBtn">Sign up</a>
+                <a href="#" class="btn loginButton">Login</a>
+                <a href="/form.html" class="btn signupButton">Sign up</a>
             </div>
     
             <div class="btn-mobile-nav">
@@ -54,20 +57,17 @@
         </div>
     </header>
 
+    <!-- HERO SECTION -->
+
     <main>
-
-        <!-- HERO SECTION -->
-
         <section class="heroSection">
             <div class="heroContainer">
-                <p class="heroText">Cards</p>
+                <h5 class="heroText">Cards</h5>
 
                 <h2 class="heroTittle">Get a card <br> you control</h2>
-
                 <h5 class="heroSubTittle">Manage cards in-app with just a tap</h5>
-
                 <div class="heroBtn">
-                    <a href="#" class="btn">Get a free account</a>
+                    <a href="#" class="button btn">Get a free account</a>
                 </div>
             </div>
         </section>
@@ -77,38 +77,43 @@
         <section class="aboutSection">
             <div class="gridCard addWallet">
                 <div class="gridItem gridItemCard">
-                    <img class="aboutImg" src="/img/Card1.png" alt="atm2"><br>
+                    <img
+                        class="aboutImg"
+                        src="/img/Card1.png"
+                        style="border-radius: 10px"
+                        alt="atm Card" 
+                    />
                     
-                    <a href="#"><button>
-                        <img src="/img/Wallet.png" alt="wallet icon">Add to apple wallet
+                    <a href="#">
+                        <button>
+                        <img src="/img/Wallet.png" alt="wallet icon">
                         <img src="/img/wallet2.svg" alt="wallet icon">Add to apple wallet
-                    </button>
+                        </button>
                     </a>
-
                 </div>
+
                 <div class="gridItem gridItemText">
                     <h3>Spend right away with Apple pay or Google pay</h3>
                     <p>Connect your card to tap and pay with your phone. No need to 
-                        wait for your physical card to arrive </p>
+                        wait for your physical card to arrive
+                    </p>
                 </div>
             </div>
             
             <div class="gridCard learnMore">
-                <div class="gridItem">
+                <div class="gridItem learnMoreCard">
                     <img src="/img/Card2.png" alt="atm Card" class="atm2" />
                     <img src="/img/atmTablet.svg" alt="atm Card" class="atmTablet" />    
                 </div>
                 <div class="gridItem gridItemText">
                     <h3>Spend right away with Apple pay or Google pay</h3>
                     <p>Connect your card to tap and pay with your phone. No need to 
-                        wait for your physical card to arrive </p>
-                        <a href="#"><button class="learnMoreBtn">Learn more</button>
-                    </a>
+                        wait for your physical card to arrive 
+                    </p>
+                        <a href="#"><button class="learnMoreBtn">Learn more</button></a>
                 </div>
-            </div>
-            
+            </div> 
         </section>
-    
     </main>
 
     <!-- FOOTER SECTION -->
@@ -155,8 +160,12 @@
            </div>
         </div>
     </footer>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="/script.js"></script>
+    <script type="module" 
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js">
+    </script>
+    <script nomodule 
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js">
+    </script>
+    <script src="/js/script.js"></script>
 </body>
 </html>
